@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    
+<body>
+  <nav class="w3-bar w3-black">
+    <a href="#home" class="w3-button w3-bar-item">Home</a>
+    <a href="#band" class="w3-button w3-bar-item">About us</a>
+    <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+    <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+  </nav>  
+    <div class="container">
+      <h1>Our Plans</h1>
+      <div class="card-container">
+        <div class="card-wrapper">
+          <div class="card light">
+            <div class="text-overlay">
+              <h2>Volume Gesture </h2>
+              <div class="details-text">
+                <span></span>
+  
+              </div>
+            </div>
+            <div class="purchase-button-container">
+              <h2 class="back-h2">Volume Gesture</h2>
+              <i style="font-size:50px" class="fa">&#xf258;</i>
+              <div class="purchase-button light">Click Here</div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div class="card dark">
+            <div class="text-overlay">
+              <h2>Mouse Detection </h2>
+              <div class="details-text">
+  
+              </div>
+            </div>
+            <div class="purchase-button-container">
+              <h2 class="back-h2">Mouse Detection</h2>
+              <i class="far fa-hand-peace" style="font-size:50px"></i> 
+              <div class="purchase-button dark">Click Here</div>
+            </div>
+          </div>
+        </div>
+        <div class="card-wrapper">
+          <div class="card light">
+            <div class="text-overlay">
+              <h2>Face Detection</h2>
+              <div class="details-text">
+              </div>
+            </div>
+            <div class="purchase-button-container">
+              <h2 class="back-h2">Face Detection</h2>
+              <i class='fas fa-chalkboard-teacher' style='font-size:50px'></i>
+              <div class="purchase-button light">Click Here</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script >
+    var menuBtn = document.querySelector('.menu-btn');
+var nav = document.querySelector('nav');
+var lineOne = document.querySelector('nav .menu-btn .line--1');
+var lineTwo = document.querySelector('nav .menu-btn .line--2');
+var lineThree = document.querySelector('nav .menu-btn .line--3');
+var link = document.querySelector('nav .nav-links');
+menuBtn.addEventListener('click', () => {
+    nav.classList.toggle('nav-open');
+    lineOne.classList.toggle('line-cross');
+    lineTwo.classList.toggle('line-fade-out');
+    lineThree.classList.toggle('line-cross');
+    link.classList.toggle('fade-in');
+})
+  </script>
+</html>
